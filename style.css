@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 88%;
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rb-colors{
+    border: 1px solid gray;
+    text-align: center;
+}
+
+.rb-colors h1{
+
+    text-transform: uppercase;
+    font-size:3rem;
+    animation:colorchange 6s infinite alternate;
+
+}
+
+.rb-colors h2{
+
+    border:1px solid grey;
+    font-size:3rem;
+    margin-top:13%;
+    
+
+}
+
+@keyframes colorchange {
+
+    0% {
+        color: red;
+    }
+
+    20% {
+        color: orange;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    60% {
+        color: blue;
+    }
+
+    80% {
+        color: indigo;
+    }
+
+    100% {
+        color: violet;
+    }
+
+}
+
+
+@media ( max-width: 440px){
+        .hex-colors h1 {
+            font-size: 1.5rem;
+        } 
+            .hex-colors h2 {
+                font-size: 1.3rem;
+    }
+
+}
